@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "node test.js",
-    "deploy":"git push heroku main"
+    "deploy": "git push heroku main"
   },
   "dependencies": {
     "axios": "0.20.0",
@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.5",
     "express": "^4.15.2",
+    "node-binance-api": "^0.12.5",
     "querystring": "^0.2.1"
   },
   "devDependencies": {
