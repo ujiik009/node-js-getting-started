@@ -34,7 +34,7 @@ app.post("/webhook", async (req, res) => {
   const message_notify = await axios.post(
     "https://notify-api.line.me/api/notify",
     qs.stringify({
-      message: `COIN : ${req.body.COIN}\nACTION : ${req.body.ACTION} `,
+      message: `\nCOIN : ${req.body.COIN}\nACTION : ${req.body.ACTION} `,
     }),
     {
       headers: {
