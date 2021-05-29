@@ -5,7 +5,7 @@ const path = require('path')
 const PORT = process.env.PORT || 80
 const line_token = "4RyIMlkG71klyq3wM4zbAdLB86SRNTo7jf9EzxYFqq9"
 const axios = require("axios")
-
+const qs = require("querystring");
 app.use(cors())
 var bodyParser = require('body-parser');
 
@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   })
 })
 
-app.post("/webhook", (req, res) => {
+app.post("/webhook", async (req, res) => {
   console.log(req.body);
 
   // SEND LINE NOTIFY
