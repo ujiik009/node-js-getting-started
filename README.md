@@ -46,3 +46,11 @@ For more information about using Node.js on Heroku, see these Dev Center article
 
 
 Pseudocode
+
+Triger Buy Signal
+    check USDT balance
+    Buy Order Market All in USDT
+
+Triger Sell Signal
+    check DOGE balance
+    Sell order Market All in DOGE
